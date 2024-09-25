@@ -8,7 +8,7 @@ function App() {
   const [time, setTime] = useState({})
 
   useEffect(() => {
-    fetch('https://api.myquran.com/v2/sholat/jadwal/1204/2024/09/24')
+    fetch('https://api.myquran.com/v2/sholat/jadwal/1204/2024/09/25')
       .then((res) => res.json())
       .then((data) => setTime(data.data))
       .catch((error) => console.log(error))
