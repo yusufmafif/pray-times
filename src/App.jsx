@@ -2,7 +2,7 @@
 import { useState, useEffect, useRef } from 'react'
 import './App.css'
 import InputForm from './components/elements/input'
-import Dropdown from './components/elements/input/dropdown'
+import Dropdown from './components/elements/input/Dropdown'
 import Navbar from './components/Fragments/Navbar'
 import html2pdf from 'html2pdf.js';
 
