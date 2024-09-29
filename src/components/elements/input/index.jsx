@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 
 
 const InputForm = forwardRef(function InputFormWithRef(props, ref) {
-    const {type,name,placeholder,label,onChange,value } = props
+    const { type, name, placeholder, label, onChange, value } = props
     return (
         <div className="w-80">
             <Label text={name} name={label} />

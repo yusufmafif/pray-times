@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const InputForm = forwardRef((props, ref) => {
     const { type, placeholder, name, onChange, value } = props
     return (
-        <input type={type} className='text-sm border rounded w-full py-2 px-3 text-white' placeholder={placeholder} id={name} ref={ref} onChange={onChange} value={value} />
+        <input type={type} className='text-sm border rounded w-full py-2 px-3 text-white text-center' placeholder={placeholder} id={name} ref={ref} onChange={onChange} value={value} />
     )
 })
 
