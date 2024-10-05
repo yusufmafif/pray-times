@@ -40,3 +40,15 @@
 .read-the-docs {
   color: #888;
 }
+
+.table-cell {
+  padding: 5px; /* Atur sesuai kebutuhan */
+  text-align: center; /* Mengatur agar teks berada di tengah */
+  width: 10%;
+  table-layout: fixed;
+}
+
+table {
+  border-collapse: collapse;
+}
+

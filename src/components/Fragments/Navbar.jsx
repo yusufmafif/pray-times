@@ -20,7 +20,7 @@ const logout = () => {
     <div className="mb-9"><nav className="navbar is-fixed-top has-shadow" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
         {/* <NavLink to={"/dashboard"} className="navbar-item" href="https://bulma.io"> */}
-         <h1 className="text-white">Pray Times</h1>
+         <h1 className="text-white">Jadwal Sholat</h1>
         {/* </NavLink> */}
       </div>
     

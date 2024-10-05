@@ -29,28 +29,101 @@ export default function Dropdown({ onSelect }) {
                 <div className="py-1">
                     <MenuItem>
                         <a
-                            onClick={() => handleSelect('Month')}
+                            onClick={() => handleSelect('Januari')}
                             className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
                         >
-                            Month
+                            Januari
                         </a>
                     </MenuItem>
                     <MenuItem>
                         <a
-                            onClick={() => handleSelect('Today')}
+                            onClick={() => handleSelect('Februari')}
                             className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
                         >
-                            Today
+                            Februari
                         </a>
                     </MenuItem>
                     <MenuItem>
                         <a
-                            onClick={() => handleSelect('Week')}
+                            onClick={() => handleSelect('Maret')}
                             className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
                         >
-                            Week
+                            Maret
                         </a>
                     </MenuItem>
+                    <MenuItem>
+                        <a
+                            onClick={() => handleSelect('April')}
+                            className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+                        >
+                            April
+                        </a>
+                    </MenuItem>
+                    <MenuItem>
+                        <a
+                            onClick={() => handleSelect('Mei')}
+                            className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+                        >
+                            Mei
+                        </a>
+                    </MenuItem>
+                    <MenuItem>
+                        <a
+                            onClick={() => handleSelect('Juni')}
+                            className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+                        >
+                            Juni
+                        </a>
+                    </MenuItem>
+                    <MenuItem>
+                        <a
+                            onClick={() => handleSelect('Juli')} 
+                            className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+                        >
+                            Juli
+                        </a>
+                    </MenuItem>
+                    <MenuItem>
+                        <a
+                            onClick={() => handleSelect('Agustus')}
+                            className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+                        >
+                            Agustus
+                        </a>
+                    </MenuItem>
+                    <MenuItem>
+                        <a
+                            onClick={() => handleSelect('September')}
+                            className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+                        >
+                            September
+                        </a>
+                    </MenuItem>
+                    <MenuItem>
+                        <a
+                            onClick={() => handleSelect('Oktober')}
+                            className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+                        >
+                            Oktober
+                        </a>
+                    </MenuItem>
+                    <MenuItem>
+                        <a
+                            onClick={() => handleSelect('November')}
+                            className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+                        >
+                            November
+                        </a>
+                    </MenuItem>
+                    <MenuItem>
+                        <a
+                            onClick={() => handleSelect('Desember')}
+                            className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+                        >
+                            Desember
+                        </a>
+                    </MenuItem>
+                    
                 </div>
             </MenuItems>
         </Menu>
