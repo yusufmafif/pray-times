@@ -5,6 +5,7 @@ import InputForm from './components/elements/input'
 import Dropdown from './components/elements/input/Dropdown'
 import Navbar from './components/Fragments/Navbar'
 import html2pdf from 'html2pdf.js';
+import Layout from './pages/Layout'
 
 function App() {
   const [cities, setCities] = useState([]);
@@ -131,8 +132,8 @@ function App() {
   }, [city, selectedOption]);
 
   return (
-    <>
-      <Navbar />
+    <Layout>
+      {/* <Navbar /> */}
       <div className='md:flex justify-between gap-4'>
         <div className='flex justify-center'>
           <InputForm
@@ -238,7 +239,7 @@ function App() {
       {time.jadwal && time.jadwal.length > 0 && (<div className='pt-5'>
         <button className='bg-white ' onClick={exportToPDF}>Export as PDF</button>
       </div>)}
-    </>
+    </Layout>
   )
 }
 

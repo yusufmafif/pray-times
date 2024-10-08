@@ -1,46 +1,22 @@
-import { useState, useEffect } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Layout from './pages/Layout'
 
-function App() {
-  const [count, setCount] = useState(0)
-  const [time, setTime] = useState({})
-
-  useEffect(() => {
-    fetch('https://api.myquran.com/v2/sholat/jadwal/1204/2024/09/25')
-      .then((res) => res.json())
-      .then((data) => setTime(data.data))
-      .catch((error) => console.log(error))
-  }, [])
-
+function Home() {
 
   return (
     <>
-      <div>
-        {time.jadwal?.subuh}
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>{time.jadwal?.subuh}
-      </h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Layout>
+        <div className='text-white text-2xl font-light sm:text-4xl'>
+          Export <v className='text-white text-2xl font-bold sm:text-4xl'>Pray Times</v> <v className='text-red-500 font-extrabold bg-white px-2 rounded-md animate-pulse'>to PDF</v>
+        </div>
+        <div className="flex flex-col items-center">
+        <img src="/Mosque.jpg" className='p-10 w-3/4'/>
+        </div>
+        <div className='pt-5 text-white text-xl font-sans animate-pulse'>
+          Easily Generate Pray Times PDF for all Indonesia Region
+        </div>
+      </Layout>
     </>
   )
 }
 
-export default App
+export default Home
