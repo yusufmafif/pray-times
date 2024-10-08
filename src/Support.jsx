@@ -1,5 +1,5 @@
 import Layout from './pages/Layout'
-import { GitHubLogoIcon} from '@radix-ui/react-icons'
+import { GitHubLogoIcon} from '../node_modules/@radix-ui/react-icons'
 
 function Support() {
 
