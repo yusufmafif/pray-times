@@ -12,7 +12,7 @@ function Home() {
         <img src="/Mosque.jpg" className='p-10 w-3/4'/>
         </div>
         <div className='pt-5 text-white text-xl font-sans animate-pulse'>
-          Easily Generate Pray Times PDF for all Indonesia Region
+          Easily Generate Pray Times PDF for all Indonesia Regions
         </div>
       </Layout>
     </>
