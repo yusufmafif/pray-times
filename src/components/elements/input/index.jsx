@@ -7,11 +7,11 @@ import PropTypes from 'prop-types';
 
 
 const InputForm = forwardRef(function InputFormWithRef(props, ref) {
-    const { type, name, placeholder, label, onChange, value } = props
+    const { type, name, placeholder, label, onChange, value, isLoading } = props
     return (
         <div className="w-80">
             <Label text={name} name={label} />
-            <Input name={label} value={value} type={type} placeholder={placeholder} ref={ref} onChange={onChange} />
+            <Input name={label} value={value} type={type} placeholder={placeholder} ref={ref} onChange={onChange} isLoading={isLoading} />
         </div>
     )
 })
