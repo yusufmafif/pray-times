@@ -145,7 +145,7 @@ function App() {
     setLong(suggestion.lon);
     setLat(suggestion.lat);
     setCity(suggestion.display_name.split(",")[0]);
-setCityName(suggestion.display_name);
+    setCityName(suggestion.display_name);
     // Tandai bahwa suggestion diklik
     isSuggestionClicked.current = true;
     setSuggestions([]); // Kosongkan suggestions
@@ -173,26 +173,34 @@ setCityName(suggestion.display_name);
             label="Kota"
             value={city}
             type="text"
-            placeholder={city ? "" : "Aceh"}
+            placeholder={city ? "" : "Type for suggestions."}
             name="city"
             ref={emailRef}
             onChange={handleInputChange}
             isLoading={isFetching}
           />
 
-          {city.trim() !== '' && suggestions.length > 0 && (
-            <ul className='absolute z-50 mt-20 bg-white border rounded-md w-80'>
-              {suggestions.map((suggestion) => (
-                <li
-                  className="hover:bg-gray-100 p-2"
-                  key={suggestion.place_id}
-                  onClick={() => handleSuggestionClick(suggestion)}
-                >
-                  {suggestion?.display_name ? suggestion.display_name.split(",").slice(0, 3).join(", ") : ""}
-                </li>
-              ))}
-            </ul>
-          )}
+          {city.trim() !== '' &&
+            suggestions
+              .filter((suggestion) => suggestion?.display_name?.toLowerCase().includes('indonesia'))
+              .length > 0 && (
+              <ul className='absolute z-50 mt-20 bg-white border rounded-md w-80'>
+                {suggestions
+                  .filter((suggestion) => suggestion?.display_name?.toLowerCase().includes('indonesia'))
+                  .map((suggestion) => (
+                    <li
+                      className="hover:bg-gray-100 p-2"
+                      key={suggestion.place_id}
+                      onClick={() => handleSuggestionClick(suggestion)}
+                    >
+                      {suggestion?.display_name
+                        ? suggestion.display_name.split(",").slice(0, 3).join(", ")
+                        : ""}
+                    </li>
+                  ))}
+              </ul>
+            )}
+
         </div>
         <div className='flex justify-center'>
           <Dropdown onSelect={handleDropdownSelect} />

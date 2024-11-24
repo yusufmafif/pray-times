@@ -15,6 +15,9 @@ function Home() {
         <div className='pt-5 text-white text-xl font-sans animate-pulse'>
           Download PDF Jadwal Sholat untuk seluruh wilayah Indonesia
         </div>
+        <div className=' text-white text-sm font-sans animate-pulse'>
+          Waktu menurut Kementrian Agama Indonesia.
+        </div>
       </Layout>
     </>
   )
