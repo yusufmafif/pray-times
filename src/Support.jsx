@@ -13,10 +13,11 @@ function Support() {
         <div className="flex flex-col items-center">
           {/* <img src="/Mosque.jpg" className='p-10 w-3/4 ' /> */}
         </div>
+        <a href="https://github.com/yusufmafif/pray-times">
         <div className='pt-5 text-white text-xl font-sans animate-pulse flex items-center justify-center gap-3'>
           Contribute to Project<GitHubLogoIcon className='w-8 h-8' />
-
         </div>
+        </a>
       </Layout>
     </>
   )
